@@ -1,0 +1,37 @@
+{
+    "name": "tacraft-sociality/flarum-user-uid",
+    "description": "Show the numeric user id on the user card.",
+    "keywords": [
+        "flarum",
+        "usercard",
+        "uid"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tacraft Sociality",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "flarum/core": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TacraftSociality\\UserUid\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "User UID",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-id-card",
+                "backgroundColor": "#D3241C",
+                "color": "#fff"
+            }
+        }
+    }
+}
